@@ -59,7 +59,7 @@ main {
   }
 
   & form {
-    margin: 0 auto 60px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,7 +78,7 @@ main {
   }
 
   & button {
-    margin: 10px auto;
+    margin: 16px auto;
     width: 90%;
     max-width: 90%;
     border-radius: 50px;
@@ -122,14 +122,10 @@ footer {
 
 /* DOM Manipulation */
 #error-message {
-  min-height: 20px;
-}
-
-/* Targeting password inputs with the "error" class */
-& .error {
-  font-size: 0.8rem; /* Apply a red border for error inputs */
-  color: red;
-  /* Any other styling for error inputs */
+  min-height: 30px;
+  margin-bottom: 30px;
+  font-size: 0.9rem;
+  color: var(--light-red);
 }
 
 /* FEM Attributes */
@@ -154,7 +150,7 @@ footer {
     }
 
     & p:nth-child(2) {
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
 
     & form {
