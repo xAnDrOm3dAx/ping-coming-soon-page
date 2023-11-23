@@ -79,7 +79,7 @@ main {
   }
 
   & input:focus {
-    outline: 2px solid var(--pale-blue);
+    outline: 1.5px solid var(--pale-blue);
   }
 
   & input.error:focus {
