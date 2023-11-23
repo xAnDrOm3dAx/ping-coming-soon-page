@@ -1,34 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="css-reset.css">
+  <script src="main.js" defer></script>
   <title>Frontend Mentor | Ping coming soon page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <div class="page-container">
+    <header>
+      <img src="images/logo.svg" alt="Ping logo">
+    </header>
 
-  We are launching soon!
+    <main>
+      <p>We are launching <span>soon!</span></p>
+      <p>Subscribe and get notified</p>
+      <form action="">
+        <label for="user-email"></label>
+        <input type="email" id="user-email" name="email" placeholder="Your email address...">
+        <div id="error-message"></div> <!-- Placeholder for error message -->
+        <button type="submit">Notify Me</button>
+      </form>
+      <img src="images/illustration-dashboard.png" alt="illustration dashboard">
+    </main>
 
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+    <footer>
+      <div class="icon-container">
+        <img src="images/5296500_fb_social media_facebook_facebook logo_social network_icon.svg" alt="facebook-icon">
+        <img src="images/5296514_bird_tweet_twitter_twitter logo_icon.svg" alt="twitter-icon">
+        <img src="images/8726142_instagram_icon.svg" alt="instagram-icon">
+      </div>
+      <p>&copy; Copyright Ping. All rights reserved.</p>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/xAnDrOm3dAx/ping-coming-soon-page">C. Werkmeister</a>
+      </p>
+    </footer>
+  </div>
 </body>
+
 </html>
