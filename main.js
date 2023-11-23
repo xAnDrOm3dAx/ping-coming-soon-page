@@ -16,7 +16,9 @@ function validateEmail() {
   // Regular expression for basic email validation
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-  if (!emailRegex.test(userEmail)) {
+  if (userEmail === "") {
+    displayError("Whoops! It looks like you forgot to add your email");
+  } else if (!emailRegex.test(userEmail)) {
     displayError("Please provide a valid email address");
   } else {
     clearError();
