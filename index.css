@@ -1,0 +1,170 @@
+:root {
+  /* Primary */
+  --blue: hsl(223, 87%, 63%);
+
+  /* Secondary */
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Neutral */
+  --gray: hsl(0, 0%, 59%);
+  --light-gray: hsl(0, 5%, 90%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+
+  /* Typography */
+  --font-family: "Libre Franklin", sans-serif;
+  --font-size: 20px;
+}
+
+html * {
+  font-family: var(--font-family);
+}
+
+body {
+  max-width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  margin-top: 100px;
+}
+
+main {
+  margin-top: 40px;
+  text-align: center;
+
+  & p:nth-child(1) {
+    margin-bottom: 16px;
+    color: var(--gray);
+    font-size: 1.4rem;
+
+    & span {
+      color: var(--very-dark-blue);
+      font-weight: 700;
+    }
+  }
+
+  & p:nth-child(2) {
+    margin-bottom: 30px;
+    color: var(--very-dark-blue);
+    font-size: 0.9rem;
+  }
+
+  & form {
+    margin: 0 auto 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & input {
+    min-width: 90%;
+    border-radius: 50px;
+    padding: 10px 30px;
+    border: 1px solid var(--pale-blue);
+  }
+
+  & input::placeholder {
+    color: var(--gray);
+  }
+
+  & button {
+    margin: 10px auto;
+    width: 90%;
+    max-width: 90%;
+    border-radius: 50px;
+    padding: 10px 30px;
+    border: 1px solid var(--gray);
+    background-color: var(--blue);
+    color: var(--white);
+    font-weight: 600;
+    box-shadow: 0 10px 30px -12px var(--blue);
+  }
+}
+
+footer {
+  margin: 80px 0 0;
+
+  .icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    & img {
+      max-width: 40px;
+      border: 1px solid var(--light-gray);
+      border-radius: 50%;
+      padding: 8px;
+    }
+  }
+
+  & > p:nth-child(2) {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--gray);
+  }
+
+  & > p:nth-child(3) {
+    margin: 30px 0;
+    text-align: center;
+  }
+}
+
+/* DOM Manipulation */
+#error-message {
+  min-height: 20px;
+}
+
+/* Targeting password inputs with the "error" class */
+& .error {
+  font-size: 0.8rem; /* Apply a red border for error inputs */
+  color: red;
+  /* Any other styling for error inputs */
+}
+
+/* FEM Attributes */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media Queries */
+@media (min-width: 600px) {
+  body {
+    max-width: 50%;
+  }
+
+  main {
+    & p:nth-child(1) {
+      font-size: 1.8rem;
+    }
+
+    & p:nth-child(2) {
+      font-size: 1rem;
+    }
+
+    & form {
+      flex-direction: row;
+      max-width: 80%;
+      gap: 5px;
+    }
+
+    & button {
+      min-width: fit-content;
+    }
+  }
+}
