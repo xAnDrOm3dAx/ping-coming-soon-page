@@ -75,6 +75,11 @@ main {
 
   & input::placeholder {
     color: var(--gray);
+    font-size: 0.8rem;
+  }
+
+  & input:focus {
+    outline: 2px solid var(--pale-blue);
   }
 
   & button {
@@ -124,7 +129,7 @@ footer {
 #error-message {
   min-height: 30px;
   margin-bottom: 30px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: var(--light-red);
 }
 
