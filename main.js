@@ -28,14 +28,14 @@ function validateEmail() {
 }
 
 function displayError(message) {
-  errorMessage.classList.add("error");
+  emailInput.classList.add("error");
   errorMessage.textContent = message;
   emailInput.style.border = "1px solid var(--light-red)";
   emailInput.placeholder = "example@example.com";
 }
 
 function clearError() {
-  errorMessage.classList.remove("error");
+  emailInput.classList.remove("error");
   errorMessage.textContent = "";
   emailInput.style.border = "1px solid var(--pale-blue)";
   emailInput.placeholder = "Your email address...";

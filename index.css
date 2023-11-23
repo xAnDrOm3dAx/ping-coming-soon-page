@@ -82,10 +82,13 @@ main {
     outline: 2px solid var(--pale-blue);
   }
 
+  & input.error:focus {
+    outline: none;
+  }
+
   & button {
+    min-width: 90%;
     margin: 16px auto;
-    width: 90%;
-    max-width: 90%;
     border-radius: 50px;
     padding: 10px 30px;
     border: 1px solid var(--gray);
@@ -126,6 +129,7 @@ footer {
 }
 
 /* DOM Manipulation */
+
 #error-message {
   min-height: 30px;
   margin-bottom: 30px;
