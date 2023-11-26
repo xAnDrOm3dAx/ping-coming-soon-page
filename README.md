@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/xAnDrOm3dAx/ping-coming-soon-page)
-- Live Site URL: [Add live site URL here](https://xandrom3dax.github.io/ping-coming-soon-page/)
+- Solution URL: [https://github.com/xAnDrOm3dAx/ping-coming-soon-page]
+- Live Site URL: [https://xandrom3dax.github.io/ping-coming-soon-page/]
 
 ## My process
 
