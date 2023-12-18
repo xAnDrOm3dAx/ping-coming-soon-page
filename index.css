@@ -148,7 +148,7 @@ footer {
 }
 
 /* Media Queries */
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   body {
     max-width: 50%;
   }
