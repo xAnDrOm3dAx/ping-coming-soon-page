@@ -136,7 +136,7 @@ footer {
   min-height: 30px;
   margin-bottom: 30px;
   color: var(--light-red);
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 /* FEM Attributes */
@@ -177,5 +177,9 @@ footer {
     & button {
       min-width: fit-content;
     }
+  }
+
+  #error-message {
+    font-size: 1rem;
   }
 }
